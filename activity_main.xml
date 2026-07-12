@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFF3F2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TOP STATS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="0\nTotal"
+                android:gravity="center"
+                android:background="#FFFFFF"
+                android:textColor="#2D6CCF"
+                android:layout_margin="6dp"
+                android:textStyle="bold"
+                android:elevation="4dp"/>
+
+            <TextView
+                android:id="@+id/tvUpcoming"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="0\nUpcoming"
+                android:gravity="center"
+                android:background="#E1F5FE"
+                android:textColor="#0288D1"
+                android:layout_margin="6dp"
+                android:textStyle="bold"
+                android:elevation="4dp"/>
+
+            <TextView
+                android:id="@+id/tvCompleted"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:text="0\nDone"
+                android:gravity="center"
+                android:background="#E8F5E9"
+                android:textColor="#388E3C"
+                android:layout_margin="6dp"
+                android:textStyle="bold"
+                android:elevation="4dp"/>
+        </LinearLayout>
+
+        <!-- BUTTONS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Add Medicine"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:backgroundTint="#5FC4B8"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnHistory"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="View History"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:backgroundTint="#5FC4B8"/>
+        </LinearLayout>
+
+        <!-- TITLE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Today's Medicines"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#2D6CCF"
+            android:layout_marginTop="20dp"/>
+
+        <!-- LIST -->
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:dividerHeight="10dp"
+            android:background="#FFFFFF"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+</ScrollView>
